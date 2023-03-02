@@ -7,26 +7,54 @@
     grid-auto-rows: minmax(100px, auto);
   }
 
-  .Encabezado {
-    background-color: black;
-    grid-column: 1 / 5;
+/*
+  img.alineadoTextoImagenArriba{
+    vertical-align: middle;  
+  }
+*/
+
+.imagen{
+    text-align: start;
+}
+
+.Encabezado {
+    background-color: greenyellow;
+    border-radius: 15px 10px 15px 10px;
+
+    padding: 5px 5px 5px 15px; /* top right bottom left; (moving clockwise) */
+    grid-column: 1 / 6;
     grid-row: 1;
+
+    text-align: center;
   }
 
-  .Cientificos {
-    background-color: #ff0000;
-    grid-column: 1 / 4;
-    grid-row: 2 / 4;
-  }
+.Cientificos {
+    border-radius: 15px 10px 15px 10px;
 
-  .Auxiliar {
-    background-color: black;
-    grid-column: 5;
-    grid-row: 2 / 4;
-  }
+    border-color: green;
+    border-style: solid;
 
-  .Pie {
-    background-color: black;
+    padding: 5px 5px 5px 15px; /* top right bottom left; (moving clockwise) */
     grid-column: 1 / 5;
+    grid-row: 2 / 5;
+  }
+
+.Auxiliar {
+    background-color: greenyellow;
+    border-radius: 15px 10px 15px 10px;
+
+    padding: 5px 5px 5px 15px; /* top right bottom left; (moving clockwise) */
+    grid-column: 5;
+    grid-row: 2 / 5;
+  }
+
+.Pie {
+    background-color: greenyellow;
+    border-radius: 15px 10px 15px 10px;
+
+    padding: 35px 5px 5px 15px; /* top right bottom left; (moving clockwise) */
+    grid-column: 1 / 6;
     grid-row: 5;
+
+    text-align: center;
   }
