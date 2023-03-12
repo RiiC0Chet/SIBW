@@ -20,7 +20,7 @@
     "footer footer footer footer footer";
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 880px) {
     .wrapper {
       display: block;
     }
@@ -66,8 +66,8 @@
     grid-row: 2 / 5;/*Localizado de la fila 2 a la 4  */
 
     /*Asignamos el numero de filas y columnas*/
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
 
     grid-template-areas:
     "a b c"
@@ -116,7 +116,15 @@
     right: -9.9rem;
   }
 
+  .titulo-cientifico {
+    font-family: 'Raleway', sans-serif; /* utiliza una fuente personalizada */
+    font-size: 2rem; /* establece un tamaño de fuente grande */
+    text-transform: uppercase; /* convierte el texto a mayúsculas */
+    letter-spacing: 0.1em; /* agrega un espacio entre cada letra */
+    color:black; /* establece un color personalizado */
+    text-shadow: 2px 2px #fff; /* agrega una sombra al texto */
 
+  }
 
 a.Menu_1{
   text-decoration: none;
@@ -201,31 +209,20 @@ li:hover:after {
 }
 
 */
-.image-container {
-  --g: 4px;     /* the gap */
-  --b: 4px;    /* border thickness*/
-  --c: greenyellow; /* the color */
-  
-  
-  padding: calc(var(--g) + var(--b));
-  --_c: #0000 0 25%, var(--c) 0 50%;
-  --_g1: repeating-linear-gradient(90deg ,var(--_c)) repeat-x;
-  --_g2: repeating-linear-gradient(180deg,var(--_c)) repeat-y;
-  background:
-    var(--_g1) var(--_p, 25%) 0   ,var(--_g2) 0    var(--_p,125%),
-    var(--_g1) var(--_p,125%) 100%,var(--_g2) 100% var(--_p, 25%);
-  background-size: 200% var(--b),var(--b) 200%;
-  cursor: pointer;
-  filter: grayscale(50%);
-  transition: .3s;
 
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+.imagen_cientifico{
+  position:relative;
+    top: 1rem;
+    right: 0rem;
 }
 
-.image-container:hover {
-  --_p: 75%;
-  filter: grayscale(0%);
+button {
+  background-color: black; /* Green */
+  border: none;
+  color: white;
+  padding: 5px 32px;
+  cursor: pointer;
+  text-decoration: none;
+
+  font-size: 14px;
 }
