@@ -27,7 +27,7 @@
 }
 
 /* Creamos el encabezado que vaya desde la columna 1 a la 5 y en la fina 1*/
-.Encabezado {
+header {
 
   /*Le aplicamos el color verde amarillo y le redondeamos los bordes*/
   background-color: white;
@@ -36,19 +36,50 @@
   /*Ajustamos los tamaños de recuadro del encabezado*/
   padding: 1rem 1rem 1rem 1rem; /* top right bottom left; (moving clockwise) */
 
+  display: grid;
+
+  /*flex-wrap: wrap;*/
+
+  grid-template-columns: repeat(5, 1fr);
+  /*grid-template-rows: repeat(2, 1fr);*/
+
+
   /*Asignamos la posicion de encabezado*/
   grid-column: 1 / 6; /*Localizado de la columa 1 a la 5*/
   grid-row: 1; /*Localizado en la primera fila*/
 
   /*Reducimos el tamaño de del encabezado en altura*/
-  height: 9rem;
+  /*height: 9rem;*/
 }
 
-.imagen_logo{
-  position: relative;
-  top: 0rem;
-  right: -52rem;
+.imagen{
+  /*Asignamos la posicion de encabezado*/
+  grid-column: 1 / 2;/*Localizado de la columa 1 a la 5*/
+  grid-row: 2;/*Localizado de la fila 2 a la 4  */
+
 }
+
+.titulo-chulo {
+  font-family: 'Raleway', sans-serif; /* utiliza una fuente personalizada */
+  font-size: 3rem; /* establece un tamaño de fuente grande */
+  text-transform: uppercase; /* convierte el texto a mayúsculas */
+  letter-spacing: 0.1em; /* agrega un espacio entre cada letra */
+  color:black; /* establece un color personalizado */
+  text-shadow: 2px 2px #fff; /* agrega una sombra al texto */
+
+  /*Asignamos la posicion de encabezado*/
+  grid-column: 2 / 6;/*Localizado de la columa 1 a la 5*/
+  grid-row: 1 / 1;/*Localizado de la fila 2 a la 4  */
+
+
+  /*
+  position:relative;
+  top: -9rem;
+  right: -9.9rem;
+  */
+}
+
+
 /* Creamos la parte central de cientificos */
 .Cientificos {
   display: grid;
@@ -60,8 +91,6 @@
   border-color: white;
   border-style: solid;
 
-  /*Ajustamos la altura de la zona*/
-  height: 37rem;
 
   /*Ajustamos los tamaños de recuadro del encabezado*/
   padding: 5px 5px 5px 15px; /* top right bottom left; (moving clockwise) */
@@ -108,20 +137,6 @@
   text-align: center;
 }
 
-.titulo-chulo {
-  font-family: 'Raleway', sans-serif; /* utiliza una fuente personalizada */
-  font-size: 3rem; /* establece un tamaño de fuente grande */
-  text-transform: uppercase; /* convierte el texto a mayúsculas */
-  letter-spacing: 0.1em; /* agrega un espacio entre cada letra */
-  color:black; /* establece un color personalizado */
-  text-shadow: 2px 2px #fff; /* agrega una sombra al texto */
-
-
-
-  position:relative;
-  top: -9rem;
-  right: -9.9rem;
-}
 
 .titulo-cientifico {
   font-family: 'Raleway', sans-serif; /* utiliza una fuente personalizada */
@@ -139,18 +154,15 @@ color: black; /* Cambia el color a cualquier otro que desees */
 }
 
 ul.Navegacion_superior{
-overflow: hidden;
 
-}
+  justify-content: center;
+  align-items: center;
 
-ul.Navegacion_superior{
+  /*Asignamos la posicion de encabezado*/
+  grid-column: 2 / 5;/*Localizado de la columa 1 a la 5*/
+  grid-row: 2 / 2;/*Localizado de la fila 2 a la 4  */
 
-justify-content: center;
-align-items: center;
 
-position: relative;
-top: -160px;
-right: -130px;
 }
 
 li{

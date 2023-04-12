@@ -14,15 +14,14 @@
         <section class="wrapper">
             <!-- Creamos divisiones por secciones -->
 
-            <section class="Encabezado">
+            <header>
                 <img  class="imagen" src="imgs/pngwing.com.png" alt="Imagen del logo" width="100px" >
          
                 <h1 class="titulo-chulo">Cientificos Famosos</h1>
-
+                
                 <ul class="Navegacion_superior">
                     <li >
                         <a href="" class="Menu_1">Menu</a>
-                        
                     </li>
                     <li >
                         <a href="" class="Menu_1">Menu</a>
@@ -32,7 +31,7 @@
                     </li>
                 </ul>
             
-            </section>
+            </header>
     
             <section class="Cientificos">
 
@@ -68,16 +67,29 @@
 
             <section class="Comentarios" id="zona_c">
 
-                <label for="comentario" id="lcomentario">Comentario:</label>
-                <textarea id="comentario" name="comentario"></textarea>
+                <div class="seccion_comentario">
+                    
+                    <label for="comentario" id="lcomentario">Comentario:</label>
+                    <textarea id="comentario" name="comentario"></textarea>
 
-                <label for="linea" id="lnombre_comentario">Nombre:</label>
-                <input type="text" id="nombre_comentario" name="nombre_comentario">
+                </div>
 
-                <label for="linea" id="lcorreo">Correo:</label>
-                <input type="text" id="correo" name="correo">
+                <div class="seccion_comentario_nombre">
+
+                    <label for="linea" id="lnombre_comentario">Nombre:</label>
+                    <input type="text" id="nombre_comentario" name="nombre_comentario">
+
+                </div>
                 
-                <button type="button" id="boton_comentarios" class="boton">Introducir</button>
+                <div class="seccion_comentario_correo">
+                   
+                    <label for="linea" id="lcorreo">Correo:</label>
+                    <input type="text" id="correo" name="correo">
+                    <button type="button" id="boton_comentarios" class="boton">Introducir</button>
+
+
+                </div>
+                
             
                 <p id="Parrafo_comentarios"> 
                     <strong>Juan pedro: 19/3/23 | 12:34</strong> <br>
